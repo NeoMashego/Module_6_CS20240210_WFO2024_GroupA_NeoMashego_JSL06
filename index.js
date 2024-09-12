@@ -9,7 +9,7 @@ const menu = {
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuItems = document.getElementById("menu");
-
+    let menuContent = '';
     // Loop through each category and its items in the menu object
 
         // Create an element to represent the category
