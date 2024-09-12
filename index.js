@@ -11,7 +11,11 @@ function displayMenuItems(menu) {
     const menuItems = document.getElementById("menu");
     let menuContent = '';
     // Loop through each category and its items in the menu object
+    for(const [category, items] of Object.entries(menu)){
+        items.forEach(items => {
 
+        });
+    }
         // Create an element to represent the category
 
         // Set the text content of the category element to the category name
