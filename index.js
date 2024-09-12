@@ -14,9 +14,9 @@ function displayMenuItems(menu) {
     for(const [category, items] of Object.entries(menu)){
         menuContent += `<h2>${category}</h2>`;
         menuContent += '<ul>'
-        items.forEach(items => {
-
-        });
+            items.forEach(items => {
+                let itemsList = menuContent += `<li> ${items} </li>`
+            });
         menuContent += '</ul>';
     }
         // Create an element to represent the category
