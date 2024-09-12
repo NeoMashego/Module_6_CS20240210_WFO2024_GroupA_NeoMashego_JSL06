@@ -19,6 +19,7 @@ function displayMenuItems(menu) {
             });
         menuContent += '</ul>';
     }
+    menuItems.innerHTML = menuContent;
         // Create an element to represent the category
 
         // Set the text content of the category element to the category name
