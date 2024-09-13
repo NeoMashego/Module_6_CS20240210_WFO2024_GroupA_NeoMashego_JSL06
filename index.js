@@ -45,6 +45,9 @@ function displayMenuItems(menu) {
 
 // Callback function for adding an item to the order
 function addToOrder(itemName) {
+    let orderItems = document.getElementById("order-items");
+    let orderTotal = document.getElementById("order-total");
+    let price = 100;
     // Get the order items list and the order total element from the HTML
 
     // Create a list item for the order
