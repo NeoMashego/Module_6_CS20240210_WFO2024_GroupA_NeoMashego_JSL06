@@ -16,6 +16,7 @@ function displayMenuItems(menu) {
         menuContent += '<ul>'
             items.forEach(items => {
                 let itemsList = menuContent += `<li> ${items} </li>`
+                itemsList.addEventListener("click", addToOrder(itemName));
             });
         menuContent += '</ul>';
     }
