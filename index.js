@@ -8,15 +8,15 @@ const menu = {
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
-    const menuItems = document.getElementById("menu");
+    let menuItems = document.getElementById("menu");
     let menuContent = '';
     // Loop through each category and its items in the menu object
     for(const [category, items] of Object.entries(menu)){
         menuContent += `<h2>${category}</h2>`;
         menuContent += '<ul>'
             items.forEach(items => {
-                let itemsList = menuContent += `<li> ${items} </li>`
-                //itemsList.addEventListener("click", addToOrder(itemName));
+                menuContent += `<li>${items}</li>`;
+                menuItems.addEventListener('click', () => {addToOrder(itemName)})
             });
         menuContent += '</ul>';
     }
