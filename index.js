@@ -21,51 +21,32 @@ function displayMenuItems(menu) {
         menuContent += '</ul>';
     }
     menuItems.innerHTML = menuContent;
-        // Create an element to represent the category
-
-        // Set the text content of the category element to the category name
-
-        // Append the category element to the menu container
-
-        // Create an element to represent a list of items
-
-        // Append a list of items element to the menu container
-
-        // Loop through the items in the category and create list items
-
-            // Create a list item element
-
-            // Set the text content of the list item element to the item name
-
-            // Attach a click event listener to the list item to add it to the order
-
-            // Append the list item to the list of items
 
             
 }
 
 // Callback function for adding an item to the order
 function addToOrder(itemName) {
-    let orderItems = document.getElementById("order-items");
-    let orderTotal = document.getElementById("order-total");
+    let orderItems = document.getElementById('order-items');
+    let orderTotal = document.getElementById('order-total');
     let price = 100;
-    // Get the order items list and the order total element from the HTML
+    let orderContent = '';
 
     // Create a list item for the order
+    orderContent += '<li>'
 
-    // Set the text content of the list item to the item name
+    const currentTotal = price + price;
+    currentTotal.innerHTML = orderTotal.toFixed(2);
 
-    // Append the list item to the order items list
-
-    // Calculate and update the total price
-
-    // Update the text content of the order total element with the new total
+    orderItems.innerHTML = orderContent;
+    orderTotal.innerHTML = orderContent;
 }
 
 // Function to initialize the menu system
 function initMenuSystem(menu) {
     // Call the function to display menu items
     displayMenuItems(menu);
+    addToOrder(itemName);
 }
 
 // Start the menu system by calling the init function
