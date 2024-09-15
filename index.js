@@ -33,7 +33,8 @@ function addToOrder(itemName) {
     let orderContent = '';
 
     // Create a list item for the order
-    orderContent += '<li>'
+    let orderList = document.createElement('li');
+    orderList.innerHTML = itemName;
 
     const currentTotal = price + price;
     currentTotal.innerHTML = orderTotal.toFixed(2);
